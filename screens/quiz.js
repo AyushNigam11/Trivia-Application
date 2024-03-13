@@ -44,7 +44,10 @@ const Quiz = ({ navigation }) => {
             <TouchableOpacity style={styles.button}>
               <Text style={styles.buttonText}>SKIP</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => navigation.navigate("Results")}
+            >
               <Text style={styles.buttonText}>NEXT</Text>
             </TouchableOpacity>
             <TouchableOpacity
